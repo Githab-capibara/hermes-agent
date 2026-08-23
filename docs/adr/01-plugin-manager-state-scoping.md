@@ -1,9 +1,9 @@
-# 01. Plugin manager state scoping by Hermes home
+# 01. Scope plugin manager by Hermes home
 
 - **Status:** Accepted
 - **Date:** 2026-07-13
-- **Deciders:** Hermes Agent maintainers
-- **Related:** `plugins.py`, `hermes_constants.py`, `gateway/run.py`
+- **Deciders:** @nousresearch
+- **Related:** plugins.py, hermes_constants.py, gateway/run.py
 
 ## Context
 
@@ -39,46 +39,20 @@ path — at registration time. A single-slot cache meant:
 
 ## Decision
 
-- Replace the single-slot singleton with a cache keyed on the *resolved*
-  Hermes home path (`_plugin_managers_by_home: Dict[Path, PluginManager]`).
-  `get_plugin_manager()` resolves the current home via `get_hermes_home()`
-  (which itself already consults `get_hermes_home_override()` before
-  `os.environ`), so both the env-var and context-local override paths are
-  covered uniformly.
-- `_plugin_manager` (the old single-slot name) is kept as a thin "last
-  manager returned" pointer purely for backward compatibility with
-  existing test code that does
-  `monkeypatch.setattr(plugins_mod, "_plugin_manager", some_manager)`.
-  When that name is monkeypatched to a manager the keyed cache doesn't
-  know about, `get_plugin_manager()` treats it as an explicit injection
-  and adopts it into the cache under the *current* resolved home, rather
-  than discarding it.
-- Both `PluginManager._load_directory_module` (initial/`force=True`
-  reload within the same home) and the shared `_clear_plugin_submodules`
-  helper (profile switch / test teardown) evict `sys.modules[module_name]`
-  **and every name prefixed with `module_name + "."`** before a plugin
-  slug is (re-)imported, so relative-import submodules can never survive
-  a reload or a home switch.
-- Test isolation (`tests/conftest.py`'s `_hermetic_environment` fixture)
-  calls a new `_reset_plugin_managers_for_tests()` helper that drops the
-  entire keyed cache and purges every plugin submodule from `sys.modules`
-  between tests, instead of only resetting the single-slot pointer.
+We replace the single-slot singleton with a cache keyed on the resolved Hermes home path and ensure plugin submodules are evicted on reload or home switch.
+
+- Cache plugin managers by resolved Hermes home: `_plugin_managers_by_home: Dict[Path, PluginManager]`.
+- Resolve current home via `get_hermes_home()` which consults `get_hermes_home_override()` before `os.environ`.
+- Keep `_plugin_manager` as a thin backward-compatibility pointer; monkeypatches are adopted into the keyed cache.
+- Evict `sys.modules[module_name]` and all `module_name + "."` entries before re-import to prevent relative-import leaks.
+- Provide `_reset_plugin_managers_for_tests()` to clear cache and purge plugin submodules between tests.
 
 ## Consequences
 
-- Per-profile LCM instances (and any other context-engine plugin) use
-  their own `{home}/lcm.db` regardless of whether the profile switch went
-  through `HERMES_HOME` or `set_hermes_home_override()`.
-- Plugin discovery remains cached within a profile for normal
-  performance, and re-entering a previously-seen profile reuses its
-  cached manager instead of rebuilding from scratch.
-- Sequential *and* interleaved profile switching — in tests, the gateway
-  multiplexer worker, or embedded callers using the context-local
-  override — no longer leaks context-engine state, plugin module state,
-  or stale relative-import submodules across profiles.
-- Regression coverage exercises the real production path
-  (`set_hermes_home_override()`) rather than only the env-var path, and
-  includes a dedicated relative-import leak test.
+- **Easier:** Per-profile LCM instances use their own `{home}/lcm.db` regardless of switch mechanism. Plugin discovery is cached per profile and reused on re-entry. Profile switching no longer leaks context-engine, module, or submodule state.
+- **Harder:** Cache invalidation logic is more complex than a single slot.
+- **Given up:** Global singleton semantics for plugin manager.
+- **Migration:** Tests that monkeypatch `_plugin_manager` continue to work via adoption into cache; no production code changes required.
 
 ## Alternatives considered
 

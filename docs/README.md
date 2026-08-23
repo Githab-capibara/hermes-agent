@@ -1,49 +1,42 @@
 # Hermes Agent Documentation
 
-> **The self-improving AI agent built by [Nous Research](https://nousresearch.com).**
+🎯 Мастер-индекс
 
-<p align="center">
-  <a href="https://hermes-agent.nousresearch.com/docs/"><img src="https://img.shields.io/badge/Docs-hermes--agent.nousresearch.com-FFD700?style=for-the-badge" alt="Documentation"></a>
-  <a href="https://discord.gg/NousResearch"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
-  <a href="https://github.com/NousResearch/hermes-agent/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT"></a>
-  <a href="https://nousresearch.com"><img src="https://img.shields.io/badge/Built%20by-Nous%20Research-blueviolet?style=for-the-badge" alt="Built by Nous Research"></a>
-</p>
-
----
-
-## 🚀 Start Here
-
-New to Hermes? Start here:
+## Start here
 
 | Guide | Purpose |
 |-------|---------|
-| [Quickstart](https://hermes-agent.nousresearch.com/docs/getting-started/quickstart) | Install → setup → first conversation in 2 minutes |
-| [CLI Usage](../user-guide/cli) | Commands, keybindings, personalities, sessions |
-| [Configuration](../user-guide/configuration) | Config file, providers, models, all options |
-| [Contributing Guide](governance/02-contributing.md) | Development setup, PR process, code style |
-| [Security Policy](governance/03-security-policy.md) | Trust model, vulnerability reporting |
+| [Quickstart](user-guide/README.md) | First engagement in ~5 minutes |
+| [Getting Started](setup/README.md) | Install and initial configuration |
+| [Contributing](governance/02-contributing.md) | How to contribute to Hermes |
+| [Security Policy](governance/03-security-policy.md) | Vulnerability reporting and trust model |
 
----
-
-## 📁 Directory Map
+## Directory map
 
 | Directory | Description |
 |-----------|-------------|
-| [adr/](adr/) | Architecture Decision Records — non-obvious architectural decisions |
-| [architecture/](architecture/) | Core system architecture — sessions, profiles, streaming |
-| [api/](api/) | API contracts — wire specs for external integrations |
-| [design/](design/) | Design proposals — dashboard-native features |
-| [governance/](governance/) | Project governance — contributing, security, development guide |
-| [kanban/](kanban/) | Kanban system — multi-gateway deployment |
+| [adr/](adr/) | Architecture Decision Records |
+| [architecture/](architecture/) | Core system architecture |
+| [api/](api/) | API contracts |
+| [design/](design/) | Design proposals |
+| [developer-guide/](developer-guide/) | Developer onboarding and standards |
+| [gateway/](gateway/) | Gateway platforms and messaging |
+| [governance/](governance/) | Project governance |
+| [integration/](integration/) | Integration guides |
+| [kanban/](kanban/) | Kanban system |
 | [middleware/](middleware/) | Plugin middleware contract |
-| [observability/](observability/) | Observer hooks — telemetry contract for plugins |
-| [rfcs/](rfcs/) | Request for Comments — research spikes and proposals |
-| [security/](security/) | Security guides — network isolation, SSL |
-| [setup/](setup/) | Setup guides — Termux, platform-specific |
+| [observability/](observability/) | Telemetry and monitoring |
+| [operations/](operations/) | Operations and deployment |
+| [plugins/](plugins/) | Plugin documentation |
+| [rfcs/](rfcs/) | Request for Comments |
+| [security/](security/) | Security guides |
+| [setup/](setup/) | Setup guides |
+| [skills/](skills/) | Skills documentation |
+| [tools/](tools/) | Tools documentation |
+| [troubleshooting/](troubleshooting/) | Troubleshooting guides |
+| [user-guide/](user-guide/) | End-user guides |
 
----
-
-## 🔗 Key Entry Points
+## Key entry points
 
 ### For Contributors
 → [Development Guide](governance/01-agents-development-guide.md)
@@ -51,7 +44,7 @@ New to Hermes? Start here:
 → [Security Policy](governance/03-security-policy.md)
 
 ### For Architects
-→ [ADR Index](adr/)
+→ [ADR Index](adr/README.md)
 → [Session Lifecycle](architecture/01-session-lifecycle.md)
 → [Profile Routing](architecture/02-profile-routing.md)
 
@@ -61,29 +54,14 @@ New to Hermes? Start here:
 → [Chronos Managed Cron](api/02-chronos-managed-cron-contract.md)
 
 ### For Plugin Authors
-→ [Observer Hooks](observability/)
-→ [Middleware Contract](middleware/)
+→ [Middleware Contract](middleware/README.md)
 → [Plugin Architecture Lessons](rfcs/01-plugin-architecture-lessons.md)
 
----
-
-## 📜 Governance
+## Governance
 
 | Document | Description |
 |----------|-------------|
-| [Development Guide](governance/01-agents-development-guide.md) | Intent layer for contributors and automated review |
+| [Development Guide](governance/01-agents-development-guide.md) | Intent layer for contributors |
 | [Contributing](governance/02-contributing.md) | Setup, code style, PR process |
 | [Security Policy](governance/03-security-policy.md) | Trust model, vulnerability reporting |
-| [Code of Conduct](https://github.com/NousResearch/hermes-agent/blob/main/CODE_OF_CONDUCT.md) | Community standards |
-
----
-
-## 📊 ADR Index
-
-| # | Title | Status |
-|---|-------|--------|
-| [01](adr/01-plugin-manager-state-scoping.md) | Plugin manager state scoping by Hermes home | Accepted |
-
----
-
-*Documentation lives at [hermes-agent.nousresearch.com/docs](https://hermes-agent.nousresearch.com/docs/).*
+| [Code of Conduct](../CODE_OF_CONDUCT.md) | Community standards |

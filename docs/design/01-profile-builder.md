@@ -1,8 +1,11 @@
-# Profile Builder — Dashboard-Native, Full-Featured Profile Creation
+# 01. Build dashboard-native profile builder
 
-Status: design proposal (not yet implemented)
-Author: drafted for Teknium
-Supersedes: PR #31781 (prompt_toolkit `hermes profile wizard`)
+- **Status:** Research note
+- **Date:** 2026-08-23
+- **Deciders:** @nousresearch
+- **Researcher:** document_specialist agent
+- **Purpose:** Design dashboard-native full-featured profile creation replacing CLI wizard
+- **Feeds into:** docs/design/…
 
 ## Why this, not the CLI wizard
 
