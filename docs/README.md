@@ -1,6 +1,6 @@
 # Hermes Agent Documentation
 
-🎯 Мастер-индекс
+🎯 Master Index
 
 ## Start here
 
@@ -64,4 +64,4 @@
 | [Development Guide](governance/01-agents-development-guide.md) | Intent layer for contributors |
 | [Contributing](governance/02-contributing.md) | Setup, code style, PR process |
 | [Security Policy](governance/03-security-policy.md) | Trust model, vulnerability reporting |
-| [Code of Conduct](../CODE_OF_CONDUCT.md) | Community standards |
+| [Code of Conduct](https://github.com/NousResearch/hermes-agent/blob/main/CODE_OF_CONDUCT.md) | Community standards |

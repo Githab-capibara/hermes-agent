@@ -32,6 +32,20 @@ Use any model you want — [Nous Portal](https://portal.nousresearch.com), OpenR
 
 ---
 
+## Benchmarks
+
+![Benchmark results](assets/banner.png)
+
+*Benchmark donut chart to be added. See [docs/architecture/](../docs/architecture/) for detailed metrics.*
+
+## Architecture
+
+![Architecture overview](assets/banner.png)
+
+*Architectural diagrams SVG to be added. See [docs/architecture/01-session-lifecycle.md](docs/architecture/01-session-lifecycle.md).*
+
+---
+
 ## Quick Install
 
 ### Linux, macOS, WSL2, Termux
