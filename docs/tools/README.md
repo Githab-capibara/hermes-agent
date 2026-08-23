@@ -6,7 +6,7 @@ This directory contains tools documentation for Hermes Agent.
 
 | File | Purpose |
 |------|---------|
-| *No documents yet* | Add first guide as `01-...md` |
+| [01-live-test.md](01-live-test.md) | Live test harness for tool search |
 
 ## Related
 

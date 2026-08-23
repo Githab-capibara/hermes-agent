@@ -6,7 +6,7 @@ Hermes middleware is the behavior-changing companion to observer hooks.
 
 | File | Purpose |
 |------|---------|
-| README.md | Middleware contract specification |
+| [01-overview.md](01-overview.md) | Middleware overview |
 
 ## Overview
 rewriting a request before execution or by wrapping the execution callback

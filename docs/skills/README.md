@@ -6,7 +6,7 @@ This directory contains skills documentation for Hermes Agent.
 
 | File | Purpose |
 |------|---------|
-| *No documents yet* | Add first guide as `01-...md` |
+| [01-overview.md](01-overview.md) | Skills overview |
 
 ## Related
 

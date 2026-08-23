@@ -11,6 +11,8 @@ for contributors, the contribution rubric, and security policy.
 | [02-contributing.md](02-contributing.md) | Contributing guide — setup, style, PR process |
 | [03-security-policy.md](03-security-policy.md) | Security policy and trust model |
 | [04-contributor-email-mapping.md](04-contributor-email-mapping.md) | Contributor email → GitHub login mapping |
+| [05-agent-principles.md](05-agent-principles.md) | Agent principles and documentation standards |
+| [06-todo.md](06-todo.md) | Documentation audit todo |
 
 ## Related
 
