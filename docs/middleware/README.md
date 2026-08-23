@@ -1,7 +1,14 @@
 # Hermes Middleware
 
 Hermes middleware is the behavior-changing companion to observer hooks.
-Observer hooks report what happened. Middleware can change what happens by
+
+## Files
+
+| File | Purpose |
+|------|---------|
+| README.md | Middleware contract specification |
+
+## Overview
 rewriting a request before execution or by wrapping the execution callback
 itself.
 

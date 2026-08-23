@@ -5,6 +5,16 @@ need to reconstruct agent execution without changing runtime behavior. This
 contract supports trace, metrics, audit, replay, and export integrations such
 as Langfuse, OpenTelemetry-style collectors, and NeMo Relay.
 
+## Files
+
+| File | Purpose |
+|------|---------|
+| [01-monitoring.md](01-monitoring.md) | Monitoring guide |
+| [02-relay-shared-metrics.md](02-relay-shared-metrics.md) | NeMo Relay shared metrics |
+| [03-toolperf.md](03-toolperf.md) | Tool performance evaluation guide |
+
+## Overview
+
 Observer hooks are intentionally backend-neutral. They expose stable lifecycle
 events, correlation IDs, sanitized payloads, timing, status, and error fields.
 They do not replace Hermes' planner, model providers, memory, tool registry,

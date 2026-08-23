@@ -1,10 +1,12 @@
-# Architecture Decision Records
+# 01. Plugin manager state scoping by Hermes home
 
-## 2026-07-13: Scope plugin manager state by Hermes home/profile (keyed cache)
+- **Status:** Accepted
+- **Date:** 2026-07-13
+- **Deciders:** Hermes Agent maintainers
+- **Related:** `plugins.py`, `hermes_constants.py`, `gateway/run.py`
 
-Status: Accepted
+## Context
 
-Context:
 Hermes supports multiple profiles via different Hermes home directories.
 Homes are switched two ways in a running process: the `HERMES_HOME`
 environment variable (single-profile CLI/gateway processes), and the
@@ -35,7 +37,8 @@ path — at registration time. A single-slot cache meant:
    silently keep serving a previous profile's already-imported submodule
    code/state instead of re-executing the new profile's plugin.
 
-Decision:
+## Decision
+
 - Replace the single-slot singleton with a cache keyed on the *resolved*
   Hermes home path (`_plugin_managers_by_home: Dict[Path, PluginManager]`).
   `get_plugin_manager()` resolves the current home via `get_hermes_home()`
@@ -61,7 +64,8 @@ Decision:
   entire keyed cache and purges every plugin submodule from `sys.modules`
   between tests, instead of only resetting the single-slot pointer.
 
-Consequences:
+## Consequences
+
 - Per-profile LCM instances (and any other context-engine plugin) use
   their own `{home}/lcm.db` regardless of whether the profile switch went
   through `HERMES_HOME` or `set_hermes_home_override()`.
@@ -75,3 +79,8 @@ Consequences:
 - Regression coverage exercises the real production path
   (`set_hermes_home_override()`) rather than only the env-var path, and
   includes a dedicated relative-import leak test.
+
+## Alternatives considered
+
+- **Option A:** Keep single-slot singleton, add `HERMES_HOME` change detection. Rejected because it would not cover the `set_hermes_home_override()` path which deliberately does not mutate `os.environ`.
+- **Option B:** Force full plugin reload on every profile switch. Rejected because it would destroy caching benefits for the common case of returning to a previously-seen profile.
