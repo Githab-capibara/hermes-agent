@@ -16,9 +16,9 @@
 
 ## Phase 3 – Completeness
 - [x] Fill empty folders gateway, integration, middleware, operations, plugins, skills, tools, troubleshooting, user-guide with at least placeholder docs
-- [ ] Update main project README.md badges/shields, hero, benchmark donut, architecture SVG, docs links
+- [x] Update main project README.md badges/shields, hero, benchmark donut, architecture SVG, docs links
 
 ## Phase 4 – Cleanup
-- [ ] Remove moved source files or leave stubs
-- [ ] Update git commit author
-- [ ] Run tests to ensure no breakage
+- [x] Remove moved source files or leave stubs
+- [x] Update git commit author
+- [x] Run tests to ensure no breakage
