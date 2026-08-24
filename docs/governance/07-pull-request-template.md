@@ -3,7 +3,6 @@
 <!-- Describe the change clearly. What problem does it solve? Why is this approach the right one? -->
 
 
-
 ## Related Issue
 
 <!-- Link the issue this PR addresses. If no issue exists, consider creating one first. -->
@@ -72,4 +71,3 @@ Fixes #
 ## Screenshots / Logs
 
 <!-- If applicable, add screenshots or log output showing the fix/feature in action. -->
-
