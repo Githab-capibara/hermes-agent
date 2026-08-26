@@ -652,7 +652,12 @@ _PROVIDER_MODELS: dict[str, list[str]] = {
         "qwen/qwen3-235b-a22b-fp8",
     ],
     "omni-route": [
+        "glm/glm-4.7",
+        "openzen/hy3-free",
+        "openzen/muse-spark-1.2-contributor-free",
         "hnc/auto",
+        "hnc/kat-coder-pro-v2.5",
+        "hnc/qwen3.8-27b",
     ],
 }
 
