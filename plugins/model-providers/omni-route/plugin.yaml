@@ -1,0 +1,5 @@
+name: omni-route-provider
+kind: model-provider
+version: 1.0.0
+description: OmniRoute — unified model routing API
+author: Sapiens AI
