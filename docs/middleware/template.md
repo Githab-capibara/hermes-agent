@@ -1,21 +1,34 @@
-# Template
+# NN. Title in present-tense imperative
 
-This directory contains the universal document template for all
-documentation files in this project.
+- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Date:** YYYY-MM-DD
+- **Deciders:** GitHub handles of people who agreed to the decision
+- **Related:** issue/PR/ADR links that this decision depends on or supersedes
 
-## Usage
+## Context
 
-Copy [`template.md`](template.md) from the parent `docs/` directory
-and fill in the sections:
+What forces are at play? What makes this decision non-obvious? Two or
+three short paragraphs. Avoid restating background that is already in
+the linked docs — link instead.
 
-1. **Title** — short, imperative, present tense
-2. **Status** — Proposed / Accepted / Deprecated / Superseded
-3. **Context** — what forces are at play
-4. **Decision** — what we are doing
-5. **Consequences** — trade-offs
-6. **Alternatives** — what was rejected
+## Decision
 
-## Related
+What are we doing? Stated affirmatively, in the present tense. Keep
+this section short; the reasoning lives in Context, the trade-offs in
+Consequences.
 
-→ [Master Index](../)
-→ [ADR Index](../adr/)
+## Consequences
+
+- **Easier:** what this decision unlocks.
+- **Harder:** what this decision constrains.
+- **Given up:** capabilities or flexibility we explicitly walk away from.
+- **Migration:** if applicable, what existing code/config has to change
+  and on what timeline.
+
+## Alternatives considered
+
+- **Option A:** one-line description. Rejected because …
+- **Option B:** one-line description. Rejected because …
+
+(Do not list options you did not actually consider. An ADR is a record,
+not a literature survey.)

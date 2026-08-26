@@ -28,13 +28,17 @@ We codify agent principles and documentation standards in English, enforced on a
 12. See documentation written in wrong style? Fix it!
 
 ### Documentation style
-A. Architecture Decision Records (ADR)
-Format Michael Nygard — strict standard:
+
+A. Architecture Decision Records (ADR) — Michael Nygard format, strict standard:
+
+```markdown
 # 01. Title in present-tense imperative
+
 - **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
 - **Date:** YYYY-MM-DD
 - **Deciders:** GitHub handles
 - **Related:** links
+
 ## Context
 ...
 ## Decision
@@ -43,24 +47,31 @@ Format Michael Nygard — strict standard:
 ...
 ## Alternatives considered
 ...
+```
 
-B. Design Documents
+B. Design Documents:
+
+```markdown
 # 01. Title
+
 - **Status:** Research note
-- **Date:** ...
-- **Deciders:** ...
+- **Date:** YYYY-MM-DD
+- **Deciders:** GitHub handles
 - **Researcher:** ...
 - **Purpose:** ...
-- **Feeds into:** ...
+- **Feeds into:** docs/design/…
+```
 
-C. README in subfolders
-Table format:
+C. README in subfolders — table format:
+
+```markdown
 | Guide | Purpose |
 |-------|---------|
-| [Getting Started](03-getting-started.md) | First engagement in ~5 minutes |
+| Getting Started | First engagement in ~5 minutes |
+```
 
-D. Main project README
-Badges/shields, hero image/video, benchmark donut chart, architectural SVG diagrams, tables with links to docs.
+D. Main project README — badges/shields, hero image/video, benchmark donut
+chart, architectural SVG diagrams, tables with links to docs/.
 
 ## Consequences
 - **Easier:** Consistent documentation, easier onboarding.

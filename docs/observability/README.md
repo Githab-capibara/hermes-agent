@@ -11,7 +11,9 @@ as Langfuse, OpenTelemetry-style collectors, and NeMo Relay.
 |------|---------|
 | [01-monitoring.md](01-monitoring.md) | Monitoring guide |
 | [02-relay-shared-metrics.md](02-relay-shared-metrics.md) | NeMo Relay shared metrics |
-| [03-toolperf.md](03-toolperf.md) | Tool performance evaluation guide |
+
+Tool performance evaluation moved to the canonical harness doc:
+[Core-Toolset A/B Eval Harness](../tools/02-toolperf-abeval.md).
 
 ## Overview
 
@@ -26,7 +28,7 @@ provider requests, tool arguments, or execution callbacks.
 
 Hermes also has a first-party NeMo Relay shared-metrics path. It uses these
 lifecycle boundaries directly and does not require enabling an observability
-plugin. See [Relay shared metrics](relay-shared-metrics.md).
+plugin. See [Relay shared metrics](02-relay-shared-metrics.md).
 
 ## Contract
 

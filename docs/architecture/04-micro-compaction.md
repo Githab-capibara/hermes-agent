@@ -1,5 +1,10 @@
 # Micro-compaction
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Reference
+- **Audience:** Users tuning context management; contributors
+
 **A way to amortize the cost of compression.**
 
 Long conversations eventually outgrow the model's context window, and something

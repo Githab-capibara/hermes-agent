@@ -1,7 +1,9 @@
 # RCA: SSL CA cert bundle corruption after `hermes update`
 
-**Status:** resolved by `fix(ssl): surface broken CA bundles before provider calls`
-**Severity:** P2 — degrades the agent into opaque provider/client failures until the user repairs deps or CA configuration.
+- **Status:** Resolved — fixed by `fix(ssl): surface broken CA bundles before provider calls`
+- **Date:** 2026-08-25
+- **Type:** Root-cause analysis
+- **Severity:** P2 — degrades the agent into opaque provider/client failures until the user repairs deps or CA configuration.
 
 ## Summary
 

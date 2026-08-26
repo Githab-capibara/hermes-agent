@@ -1,5 +1,10 @@
 # Core-Toolset A/B Eval Harness
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Reference
+- **Audience:** Performance evaluation runs
+
 The hard A/B evaluation used for the August 2026 core-toolset performance
 batch (tracker: [#77056](https://github.com/NousResearch/hermes-agent/issues/77056)).
 It measures whether a set of tool-layer changes actually reduces model waste —

@@ -1,3 +1,12 @@
+# 06. Pull request template
+
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Template
+- **Related:** [Contributing](02-contributing.md)
+
+Reference copy of the PR description template used for contributions.
+
 ## What does this PR do?
 
 <!-- Describe the change clearly. What problem does it solve? Why is this approach the right one? -->

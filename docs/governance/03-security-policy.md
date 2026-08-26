@@ -1,5 +1,10 @@
 # Hermes Agent Security Policy
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Policy
+- **Audience:** Reporters and maintainers
+
 This document describes Hermes Agent's trust model, names the one
 security boundary the project treats as load-bearing, and defines the
 scope for vulnerability reports.

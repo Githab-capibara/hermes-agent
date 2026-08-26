@@ -1,5 +1,10 @@
 # Gateway Monitoring
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Reference
+- **Audience:** Operators
+
 Service health monitoring plus structured operational diagnostics for the
 Hermes gateway daemon, exported over OTLP/HTTP to an operator-configured
 endpoint (OpenTelemetry Collector, DataDog, or any OTLP receiver).

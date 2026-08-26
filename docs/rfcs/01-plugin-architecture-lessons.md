@@ -1,5 +1,10 @@
 # Research spike: plugin-architecture lessons from Pi and OpenCode
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Research note
+- **Researcher:** document_specialist agent
+
 **Issue:** #64180 · **Informs:** #64164 (event bus), #64161 (streaming hooks), #64162 (pluggable approval), #64165 (manifest v2), #64229 (lifecycle/ledger), #64230 (Plugin Doctor)
 
 **Method.** Both systems were read at source level (shallow clones pinned to a commit), not from docs sites alone: Pi (`badlogic/pi-mono`, now `earendil-works/pi`) at `eb79351` (v0.80.7, 2026-07-14) and OpenCode (`sst/opencode`, now `anomalyco/opencode`) at `c69abee` (v1.18.2, 2026-07-16). Claims below carry file:line references into those commits. Where something could not be found (ADRs, policies, timeouts), that absence was verified by search and is reported as a finding. Hermes ground rules from #64182 (additive-only, prompt-cache sacred, observer-first, fail-closed security) are treated as overriding constraints throughout — this report grades imported patterns against them, per the adapt-don't-copy rubric.

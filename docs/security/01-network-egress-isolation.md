@@ -1,5 +1,10 @@
 # Network Egress Isolation for Docker Deployments
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Guide
+- **Audience:** Docker deployments
+
 When running Hermes inside Docker, the default `network_mode: host` gives the
 agent process unrestricted outbound network access. This guide shows how to
 segment traffic so the agent core can only reach the services it needs, while

@@ -1,5 +1,10 @@
 # providers/
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Reference
+- **Audience:** Contributors adding providers
+
 Registry and ABC for every inference provider Hermes knows about.
 
 Each provider is declared once as a `ProviderProfile`. Every other layer —

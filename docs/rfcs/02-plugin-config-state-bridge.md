@@ -1,10 +1,10 @@
 # Plugin Config & State Bridge
 
-**Status:** config + state slice implemented by #64227
-
-**Original design:** Topher Ross (@thebizfixer), RFC PR #58542
-
-**Concrete consumer:** kanban-advanced
+- **Status:** Accepted — config + state slice implemented by #64227
+- **Date:** 2026-08-25
+- **Type:** RFC (implemented slice)
+- **Original design:** Topher Ross (@thebizfixer), RFC PR #58542
+- **Concrete consumer:** kanban-advanced
 
 ## Scope
 

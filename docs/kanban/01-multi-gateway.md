@@ -1,5 +1,10 @@
 # Multi-gateway deployment
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Guide
+- **Audience:** Multi-profile operators
+
 Hermes supports multiple gateway processes running concurrently — one per profile
 (default, writer, admin, coder, researcher). Each gateway opens its own connection
 to platform APIs and delivers messages for its profile's subscribers.

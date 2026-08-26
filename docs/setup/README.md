@@ -6,8 +6,10 @@ This directory contains platform-specific setup and configuration guides.
 
 | File | Purpose |
 |------|---------|
-| [01-constraints-termux.md](01-constraints-termux.md) | Termux installation constraints |
-| [02-livetest.md](02-livetest.md) | Livetest guide — live testing procedures |
+| [01-constraints-termux.md](01-constraints-termux.md) | Termux/Android dependency constraints |
+
+The tool-search live test harness lives in
+[tools/01-live-test.md](../tools/01-live-test.md).
 
 ## Related
 

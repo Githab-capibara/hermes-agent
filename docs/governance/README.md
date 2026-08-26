@@ -1,7 +1,8 @@
 # Governance
 
 This directory contains project governance documents — the intent layer
-for contributors, the contribution rubric, and security policy.
+for contributors, the contribution rubric, security policy, and community
+standards.
 
 ## Files
 
@@ -12,12 +13,10 @@ for contributors, the contribution rubric, and security policy.
 | [03-security-policy.md](03-security-policy.md) | Security policy and trust model |
 | [04-contributor-email-mapping.md](04-contributor-email-mapping.md) | Contributor email → GitHub login mapping |
 | [05-agent-principles.md](05-agent-principles.md) | Agent principles and documentation standards |
-| [06-documentation-audit-log.md](06-documentation-audit-log.md) | Documentation audit log |
-| [07-pull-request-template.md](07-pull-request-template.md) | PR template for contributions |
-| [08-contributors.md](08-contributors.md) | Contributor email mapping directory guide |
-| [09-docs-audit-todo.md](09-docs-audit-todo.md) | Docs audit checklist |
+| [06-pull-request-template.md](06-pull-request-template.md) | PR template for contributions |
+| [07-code-of-conduct.md](07-code-of-conduct.md) | Community code of conduct |
 
 ## Related
 
-→ [Code of Conduct](https://github.com/NousResearch/hermes-agent/blob/main/CODE_OF_CONDUCT.md)
-→ [Security](../security/)
+→ [Security guides](../security/)
+→ [Master index](../README.md)

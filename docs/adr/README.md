@@ -5,12 +5,6 @@ Hermes Agent — short, numbered, append-only documents that capture
 non-obvious architectural decisions, their context, and their
 consequences.
 
-## Files
-
-| # | File | Status |
-|---|------|--------|
-| 01 | [01-plugin-manager-state-scoping.md](01-plugin-manager-state-scoping.md) | Accepted |
-
 ## When to write one
 
 Write an ADR when the answer to "why is the code shaped this way?"
@@ -60,9 +54,8 @@ Use [`template.md`](template.md) as the starting point.
 - Append-only. To change a decision, write a new ADR that supersedes
   the old one; do not edit the old one except to flip its `Status` to
   `Superseded by ADR-NN`.
-- ADRs are CODEOWNERS-gated (`docs/adr/**` requires owner review).
-  Proposed ADRs may be opened by any contributor; only an owner-approved
-  PR can land them at `Status: Accepted`.
+- ADR changes require maintainer review. Proposed ADRs may be opened by any
+  contributor; only a maintainer-approved PR can land them at `Status: Accepted`.
 
 ## Index
 

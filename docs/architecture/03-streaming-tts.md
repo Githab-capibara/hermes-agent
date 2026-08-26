@@ -1,5 +1,10 @@
 # Streaming TTS
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Reference
+- **Audience:** Contributors extending voice output
+
 Hermes can stream TTS audio as it arrives from the provider, instead of waiting
 for the full audio before playing. This is used by voice mode (CLI/TUI live
 conversation), the dashboard speak-stream WebSocket, and — via the gateway

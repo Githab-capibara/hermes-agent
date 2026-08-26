@@ -1,5 +1,10 @@
 # NeMo Relay Shared Metrics
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Contract
+- **Audience:** Observability consumers
+
 Hermes includes NeMo Relay as a normal runtime dependency on platforms for
 which Relay publishes a native wheel. The shared-metrics integration is built
 into Hermes and does not require `hermes plugins enable

@@ -1,5 +1,11 @@
 # Profile-Based Routing for Inbound Messages
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Reference
+- **Audience:** Gateway operators and contributors
+- **Source files:** `gateway/profile_routing.py`, `gateway/run.py`
+
 > **Audience:** Gateway operators and contributors
 > **Source files:** `gateway/profile_routing.py`, `gateway/run.py` (`_profile_name_for_source`), `gateway/platforms/base.py` (`build_source`), `gateway/config.py`
 > **Related:** [Session Lifecycle](01-session-lifecycle.md), [Profile Builder](../design/01-profile-builder.md)

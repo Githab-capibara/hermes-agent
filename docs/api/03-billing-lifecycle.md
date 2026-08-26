@@ -1,5 +1,10 @@
 # Billing lifecycle: client-side state, errors, and recovery
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Contract
+- **Audience:** TUI/CLI maintainers and NAS implementers
+
 This is the map from every `billing.*`/`subscription.*` state shape the gateway
 serves (from NAS) to what the terminal actually renders, and from every typed
 refusal/error code to its exact user-facing copy and recovery action. The

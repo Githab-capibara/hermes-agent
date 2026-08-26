@@ -1,5 +1,10 @@
 # Contributor email → GitHub login mappings
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Process
+- **Audience:** Release managers
+
 This directory replaces appending entries to `AUTHOR_MAP` in
 `scripts/release.py`. The old dict caused constant merge conflicts when
 several salvage PRs landed at once — every PR edited the same lines of the

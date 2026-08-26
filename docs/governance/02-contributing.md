@@ -1,5 +1,10 @@
 # Contributing to Hermes Agent
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Guide
+- **Audience:** Contributors
+
 Thank you for contributing to Hermes Agent! This guide covers everything you need: setting up your dev environment, understanding the architecture, deciding what to build, and getting your PR merged.
 
 ---
@@ -990,4 +995,4 @@ test(tools): add unit tests for file_operations
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the [MIT License](LICENSE).
+By contributing, you agree that your contributions will be licensed under the [MIT License](../../LICENSE).

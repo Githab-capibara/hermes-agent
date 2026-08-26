@@ -1,5 +1,11 @@
 # Session Lifecycle
 
+- **Status:** Accepted
+- **Date:** 2026-08-25
+- **Type:** Reference
+- **Audience:** Gateway developers and maintainers
+- **Source files:** `gateway/session.py`, `gateway/run.py`, `gateway/config.py`
+
 > **Audience:** Gateway developers and maintainers
 > **Source files:** `gateway/session.py` (~1444 lines), `gateway/run.py` (~16800 lines), `gateway/config.py`
 > **Last updated:** 2026-06-16

@@ -1,6 +1,6 @@
 # Hermes Agent Documentation
 
-🎯 Master Index
+## 🎯 Master Index
 
 ## Start here
 
@@ -57,6 +57,25 @@
 → [Middleware Contract](middleware/README.md)
 → [Plugin Architecture Lessons](rfcs/01-plugin-architecture-lessons.md)
 
+### For Newcomers (mechanisms)
+→ [Gateway Overview](gateway/01-overview.md) · [Skills](skills/01-overview.md) · [Plugins](plugins/01-overview.md)
+→ [Cron Scheduler](architecture/05-cron-scheduler.md) · [Memory & State Store](architecture/06-memory-state-store.md)
+→ [Subagents & Delegation](architecture/07-subagent-delegation.md) · [MCP Integration](integration/02-mcp-integration.md)
+→ [Terminal Backends](developer-guide/02-terminal-backends.md) · [Toolsets](tools/03-toolsets-distribution.md) · [TUI](user-guide/02-tui-overview.md)
+
+## Component documentation
+
+READMEs that live next to the code they describe (kept in place by convention):
+
+| Component doc | Purpose |
+|---------------|---------|
+| [ui-tui/README.md](../ui-tui/README.md) | Terminal UI application |
+| [web/README.md](../web/README.md) | Web dashboard |
+| [apps/desktop/README.md](../apps/desktop/README.md) | Desktop app |
+| [native/fts5_cjk/README.md](../native/fts5_cjk/README.md) | CJK tokenizer for FTS5 |
+| [scripts/toolperf_abeval/README.md](../scripts/toolperf_abeval/README.md) | Toolperf harness runner |
+| [tests/stress/README.md](../tests/stress/README.md) | Stress test suites |
+
 ## Governance
 
 | Document | Description |
@@ -64,4 +83,4 @@
 | [Development Guide](governance/01-agents-development-guide.md) | Intent layer for contributors |
 | [Contributing](governance/02-contributing.md) | Setup, code style, PR process |
 | [Security Policy](governance/03-security-policy.md) | Trust model, vulnerability reporting |
-| [Code of Conduct](https://github.com/NousResearch/hermes-agent/blob/main/CODE_OF_CONDUCT.md) | Community standards |
+| [Code of Conduct](governance/07-code-of-conduct.md) | Community standards |

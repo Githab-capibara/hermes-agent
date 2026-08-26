@@ -8,6 +8,7 @@ This directory contains tools documentation for Hermes Agent.
 |------|---------|
 | [01-live-test.md](01-live-test.md) | Live test harness for tool search |
 | [02-toolperf-abeval.md](02-toolperf-abeval.md) | Core toolset A/B eval harness |
+| [03-toolsets-distribution.md](03-toolsets-distribution.md) | Toolsets registry and datagen distributions |
 
 ## Related
 
