@@ -9,7 +9,20 @@
 
 ## 🎯 Master Index
 
-## Start here
+Welcome to the **Hermes Agent** documentation hub. This index provides quick access to all documentation across the project — from architecture decisions to user guides, governance policies to API contracts.
+
+### Quick Navigation
+
+| Section | For | Start Here |
+|---------|-----|------------|
+| 🚀 **Start here** | New users | [Quickstart](user-guide/README.md) |
+| 📁 **Directory map** | Everyone | See all 20 documentation folders |
+| 🔗 **Key entry points** | By role | Find your path below |
+| 📜 **Governance** | Contributors | [Contributing guide](governance/02-contributing.md) |
+
+---
+
+## 🚀 Start here
 
 | Guide | Purpose |
 |-------|---------|
