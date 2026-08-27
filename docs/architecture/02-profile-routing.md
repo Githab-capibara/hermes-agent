@@ -1,4 +1,4 @@
-# Profile-Based Routing for Inbound Messages
+# Profile-based routing for inbound messages
 
 - **Status:** Accepted
 - **Date:** 2026-08-25

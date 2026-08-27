@@ -1,4 +1,4 @@
-# Gateway Monitoring
+# Gateway monitoring
 
 - **Status:** Accepted
 - **Date:** 2026-08-25

@@ -1,4 +1,4 @@
-# Streaming TTS
+# Streaming tts
 
 - **Status:** Accepted
 - **Date:** 2026-08-25

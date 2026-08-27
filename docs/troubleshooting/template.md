@@ -1,34 +1,31 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Active | Resolved
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Type:** Guide
+- **Audience:** operators troubleshooting issues
+- **Related:** [operations overview](../operations/01-overview.md)
 
-## Context
+## Symptom
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+What the user sees. Error messages, logs, or misbehavior.
 
-## Decision
+## Root cause
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+One paragraph explaining why this happens.
 
-## Consequences
+## Fix
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+Step-by-step resolution.
 
-## Alternatives considered
+1. Run `hermes doctor` to diagnose.
+2. Apply the fix below.
+3. Verify with `hermes health`.
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+## Workaround
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+If no fix is available yet, what to do in the meantime.
+
+## Related
+
+→ [logging configuration](../operations/03-logging.md)

@@ -1,4 +1,4 @@
-# Core-Toolset A/B Eval Harness
+# Core-toolset A/B eval harness
 
 - **Status:** Accepted
 - **Date:** 2026-08-25

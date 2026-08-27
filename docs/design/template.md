@@ -1,34 +1,44 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Under review | Approved | Implemented | Superseded
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Author:** GitHub handle
+- **Related:** [link to related doc](./01-overview.md)
 
-## Context
+## Problem
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+What gap or pain point is this design addressing? Be specific — one paragraph.
 
-## Decision
+## Proposed solution
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+Describe the approach. Include diagrams or sketches where they help.
 
-## Consequences
+## Design
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+### Principles
 
-## Alternatives considered
+Bullet list of design principles this proposal follows.
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+### Structure
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+High-level architecture: modules, components, interfaces. Use a table or ASCII
+diagram.
+
+| Component | Responsibility |
+|-----------|----------------|
+| … | … |
+
+### Contracts
+
+Named entities (tokens, classes, functions) that other developers will depend on.
+Maintain these *with* the code — if you change a contract, update this doc in the
+same change.
+
+## Migration
+
+How to move from the current state to the proposed one. What breaks? What is
+backwards-compatible?
+
+## Open questions
+
+List anything that is not yet decided.

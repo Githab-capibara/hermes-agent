@@ -1,4 +1,4 @@
-# Optional Skills
+# 02. Optional skills
 
 Official skills maintained by Nous Research that are **not activated by default**.
 

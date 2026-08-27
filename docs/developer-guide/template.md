@@ -1,34 +1,30 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Audience:** contributors who extend or maintain this area
+- **Source files:** `path/to/source.py`
 
-## Context
+## Scope
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+One paragraph describing what this guide covers and, equally important, what it
+does not.
 
-## Decision
+## Prerequisites
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+What the reader needs to know or have installed before following this guide.
 
-## Consequences
+## Steps
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+Numbered procedural steps. Each step should be a single actionable item.
 
-## Alternatives considered
+1. Do this.
+2. Do that.
+3. Verify with `command --check`.
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+## Common pitfalls
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+What goes wrong and how to recover.
+
+## Related
+
+→ [link to another doc](./01-overview.md)

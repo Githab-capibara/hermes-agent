@@ -1,34 +1,32 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | In review | Accepted | Deprecated
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Type:** Contract | Reference | Overview
+- **Audience:** who this doc is for
+- **Source files:** `path/to/source.py`, `path/to/config.yaml`
+- **Related:** [link to another doc](./01-other.md)
 
-## Context
+## Overview
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+One-paragraph summary of what this contract/specification covers.
 
-## Decision
+## Interface / Schema
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+Describe the public surface — types, endpoints, protocols, or data shapes.
 
-## Consequences
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `name` | string | yes | … |
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+## Behavior
 
-## Alternatives considered
+What the implementation must do. Include invariants, edge cases, and error handling.
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+## Examples
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+Minimal working examples that exercise the contract.
+
+## Migration
+
+If this supersedes an older interface, describe what changes and on what timeline.

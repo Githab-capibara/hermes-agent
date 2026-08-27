@@ -1,34 +1,36 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Accepted | Deprecated
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Type:** Guide
+- **Audience:** skill authors and power users
+- **Source files:** `skills/<category>/<name>/SKILL.md`
+- **Related:** [skills overview](./01-overview.md)
 
-## Context
+## Overview
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+What this skill type does and when to use it.
 
-## Decision
+## Structure
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+A skill is a directory containing:
 
-## Consequences
+| File | Purpose |
+|------|---------|
+| `SKILL.md` | frontmatter + natural-language description |
+| `prompt.md` | system prompt injected at use time |
+| `tools/` | optional tool implementations |
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+## Authoring
 
-## Alternatives considered
+How to create a new skill. Link to the full authoring guide.
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+## Testing
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+```bash
+hermes skills test <skill-name>
+```
+
+## Publishing
+
+How to share a skill with the community via the skills registry.

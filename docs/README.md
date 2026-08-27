@@ -1,5 +1,12 @@
 # Hermes Agent Documentation
 
+<p align="center">
+  <a href="https://github.com/NousResearch/hermes-agent"><img src="https://img.shields.io/github/stars/NousResearch/hermes-agent?style=for-the-badge&logo=github&color=FFD700" alt="GitHub stars"></a>
+  <a href="https://github.com/NousResearch/hermes-agent/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License: MIT"></a>
+  <a href="https://discord.gg/NousResearch"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
+  <a href="https://hermes-agent.nousresearch.com"><img src="https://img.shields.io/badge/website-hermes--agent.nousresearch.com-FFD700?style=for-the-badge" alt="Website"></a>
+</p>
+
 ## 🎯 Master Index
 
 ## Start here

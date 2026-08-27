@@ -1,34 +1,31 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Accepted | Deprecated
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Type:** Guide
+- **Audience:** operators running Hermes in production
+- **Source files:** `path/to/ops-script.sh`
+- **Related:** [gateway overview](../gateway/01-overview.md)
 
-## Context
+## Overview
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+What operational procedure this document describes.
 
-## Decision
+## Prerequisites
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+What must be in place before running this procedure.
 
-## Consequences
+## Procedure
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+Step-by-step instructions. Each step is a single command or action.
 
-## Alternatives considered
+1. `hermes status --all`
+2. Verify output matches expected state.
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+## Rollback
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+How to revert if the procedure fails partway through.
+
+## Monitoring
+
+How to verify success after the procedure completes. Link to relevant dashboards.

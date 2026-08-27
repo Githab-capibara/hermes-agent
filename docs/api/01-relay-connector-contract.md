@@ -1,4 +1,4 @@
-# Relay ↔ Connector Contract (v1, EXPERIMENTAL)
+# Relay ↔ connector contract (v1, experimental)
 
 > **Status:** EXPERIMENTAL. This contract MAY CHANGE without a deprecation
 > cycle until at least two real Class-1 platforms (Discord + Telegram) have

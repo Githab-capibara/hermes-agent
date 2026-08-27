@@ -15,6 +15,7 @@ standards.
 | [05-agent-principles.md](05-agent-principles.md) | Agent principles and documentation standards |
 | [06-pull-request-template.md](06-pull-request-template.md) | PR template for contributions |
 | [07-code-of-conduct.md](07-code-of-conduct.md) | Community code of conduct |
+| [08-desktop-engineering-guide.md](08-desktop-engineering-guide.md) | Desktop app architecture and engineering rules |
 
 ## Related
 

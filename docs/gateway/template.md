@@ -1,34 +1,32 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Accepted | Deprecated
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Type:** Reference
+- **Audience:** operators and contributors working on platform integrations
+- **Source files:** `plugins/platforms/<name>/adapter.py`
+- **Related:** [adding a platform](./02-adding-a-platform.md)
 
-## Context
+## Overview
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+What this platform adapter does and where it fits in the gateway architecture.
 
-## Decision
+## Configuration
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+| Variable | Required | Default | Description |
+|----------|----------|---------|-------------|
+| `PLATFORM_TOKEN` | yes | — | Bot token or API key |
 
-## Consequences
+## Lifecycle
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+How the adapter connects, authenticates, and disconnects. Include any reconnect
+logic or backoff strategy.
 
-## Alternatives considered
+## Message flow
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+Inbound → outbound mapping. How raw platform events are translated into Hermes
+sessions and tool calls.
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+## Testing
+
+How to test this adapter locally. Link to any fixture data or mock servers.

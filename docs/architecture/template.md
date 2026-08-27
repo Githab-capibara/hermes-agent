@@ -1,34 +1,31 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Accepted | Deprecated
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Type:** Reference | Architecture
+- **Audience:** contributors working on this subsystem
+- **Source files:** `path/to/module.py`, `path/to/config.py`
+- **Related:** [link to related doc](./01-session-lifecycle.md)
 
-## Context
+## What it does
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+High-level description of the component, subsystem, or pattern. One to three
+paragraphs max. Link to source rather than restating implementation details.
 
-## Decision
+## Layout
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+How the code is organized. Tables are preferred over prose for module mappings.
 
-## Consequences
+| Module | Role |
+|--------|------|
+| `foo.py` | … |
+| `bar.py` | … |
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+## Key invariants
 
-## Alternatives considered
+Bullet list of things the code assumes to be true. These are the contracts
+that, if broken, cause bugs.
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+## Who consumes it
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+List the callers, consumers, or downstream systems that depend on this component.

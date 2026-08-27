@@ -1,4 +1,4 @@
-# Network Egress Isolation for Docker Deployments
+# Network egress isolation for docker deployments
 
 - **Status:** Accepted
 - **Date:** 2026-08-25

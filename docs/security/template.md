@@ -1,34 +1,33 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Accepted | Deprecated
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Type:** Guide
+- **Audience:** operators and security reviewers
+- **Source files:** `path/to/security-config.yaml`
+- **Related:** [security policy](../governance/03-security-policy.md)
 
-## Context
+## Overview
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+What security concern this document addresses.
 
-## Decision
+## Threat model
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+Adversaries, capabilities, and attack surface relevant to this topic.
 
-## Consequences
+| Threat actor | Capability | Impact |
+|--------------|-----------|--------|
+| … | … | … |
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+## Controls
 
-## Alternatives considered
+What mitigations are in place. Reference config variables, network rules, and
+access policies.
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+## Verification
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+Commands or checks to confirm controls are effective.
+
+## Incidents
+
+Link to any past security incidents related to this area.

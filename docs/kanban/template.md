@@ -1,34 +1,31 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Active | Archived
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Type:** Guide
+- **Audience:** project maintainers and triage contributors
+- **Related:** [operations overview](../operations/01-overview.md)
 
-## Context
+## Overview
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+What this kanban/system entry tracks and why.
 
-## Decision
+## Board layout
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+| Column | Meaning |
+|--------|---------|
+| backlog | untriaged issues |
+| triaged | confirmed, ready for work |
+| in progress | being worked on |
+| blocked | waiting on external dependency |
+| done | shipped |
 
-## Consequences
+## Workflow rules
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+- How items move between columns.
+- Who can move what.
+- What "done" means (merged + released?).
 
-## Alternatives considered
+## Metrics
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
-
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+What burndown or cycle-time data is tracked, if any.

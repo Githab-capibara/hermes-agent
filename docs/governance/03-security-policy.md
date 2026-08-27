@@ -1,4 +1,4 @@
-# Hermes Agent Security Policy
+# Hermes agent security policy
 
 - **Status:** Accepted
 - **Date:** 2026-08-25

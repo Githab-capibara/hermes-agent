@@ -1,4 +1,4 @@
-# 07. Memory and state store
+# 06. Memory and state store
 
 - **Status:** Accepted
 - **Date:** 2026-08-25

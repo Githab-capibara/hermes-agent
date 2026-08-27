@@ -1,34 +1,36 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Under review | Accepted | Superseded
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Author:** GitHub handle
+- **Type:** RFC
+- **Related:** [ADR index](../adr/README.md)
 
-## Context
+## Summary
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+One-paragraph abstract. What is being proposed and why it matters.
 
-## Decision
+## Motivation
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+The problem this RFC addresses. Link to issues or prior discussion.
 
-## Consequences
+## Proposal
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+Detailed description of the proposed change. Include code sketches, API
+signatures, or configuration shapes where helpful.
 
-## Alternatives considered
+## Drawbacks
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+What is lost or made harder by this change.
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+## Alternatives
+
+Other approaches considered and why they were rejected.
+
+## Migration
+
+How existing deployments adapt. Backwards-compatibility notes.
+
+## Open questions
+
+Anything not yet resolved.

@@ -1,34 +1,37 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Accepted | Deprecated
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Type:** Guide
+- **Audience:** new contributors setting up Hermes
+- **Source files:** `scripts/install.sh`, `pyproject.toml`
+- **Related:** [troubleshooting overview](../troubleshooting/01-overview.md)
 
-## Context
+## Prerequisites
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+Minimum system requirements and software that must be installed first.
 
-## Decision
+## Install
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+Step-by-step commands.
 
-## Consequences
+```bash
+curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
+hermes setup
+```
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+## Verify
 
-## Alternatives considered
+How to confirm the install succeeded.
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+```bash
+hermes health
+```
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+## Upgrade
+
+How to update to a newer version without losing state.
+
+## Uninstall
+
+How to remove Hermes cleanly.

@@ -1,34 +1,37 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Accepted | Deprecated
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Type:** Contract
+- **Audience:** middleware authors and gateway operators
+- **Source files:** `middleware/<name>/`
+- **Related:** [adding a platform](../gateway/02-adding-a-platform.md)
 
-## Context
+## Overview
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+What this middleware layer does in the request pipeline.
 
-## Decision
+## Interface
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+Functions or classes that middleware must implement.
 
-## Consequences
+```python
+class Middleware:
+    async def process(request: Request) -> Response:
+        ...
+```
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+| Method | Purpose |
+|--------|---------|
+| `process()` | main hook |
+| `teardown()` | cleanup on gateway shutdown |
 
-## Alternatives considered
+## Lifecycle
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+When middleware is initialized, how it receives events, and when it is torn down.
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+## Configuration
+
+| Variable | Required | Default | Description |
+|----------|----------|---------|-------------|
+| … | … | … | … |

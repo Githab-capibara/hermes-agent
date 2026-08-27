@@ -1,34 +1,35 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Accepted | Deprecated
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Type:** Reference
+- **Audience:** operators and SREs
+- **Source files:** `observability/<name>/`
+- **Related:** [monitoring overview](./01-monitoring.md)
 
-## Context
+## Overview
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+What this observability surface tracks and why it matters.
 
-## Decision
+## Metrics
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+| Metric name | Type | Description |
+|-------------|------|-------------|
+| `hermes_delegations_active` | gauge | concurrent subagent count |
 
-## Consequences
+## Logs
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+Structured log format and which events are emitted. Link to log schema if
+available.
 
-## Alternatives considered
+## Traces
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+Span naming convention and what constitutes a trace root vs child.
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+## Dashboards
+
+Links to Grafana dashboards or screen-sharing notes.
+
+## Alerting
+
+What conditions trigger alerts and who owns the on-call rotation.

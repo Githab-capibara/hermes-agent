@@ -1,4 +1,4 @@
-# Research spike: plugin-architecture lessons from Pi and OpenCode
+# Research spike: plugin-architecture lessons from pi and opencode
 
 - **Status:** Accepted
 - **Date:** 2026-08-25

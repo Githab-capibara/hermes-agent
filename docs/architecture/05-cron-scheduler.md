@@ -1,4 +1,4 @@
-# 06. Cron scheduler
+# 05. Cron scheduler
 
 - **Status:** Accepted
 - **Date:** 2026-08-25

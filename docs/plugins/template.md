@@ -1,34 +1,37 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Accepted | Deprecated
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Type:** Guide
+- **Audience:** plugin authors
+- **Source files:** `plugins/<name>/`
+- **Related:** [adding a platform](../gateway/02-adding-a-platform.md)
 
-## Context
+## Overview
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+What this plugin does and which Hermes extension point it hooks into.
 
-## Decision
+## Installation
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+```bash
+hermes plugin install <name>
+```
 
-## Consequences
+## Configuration
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+| Variable | Required | Default | Description |
+|----------|----------|---------|-------------|
+| `PLUGIN_TOKEN` | yes | — | … |
 
-## Alternatives considered
+## API surface
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+Functions, tools, or hooks this plugin exposes.
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+```python
+def my_plugin_hook(context: PluginContext) -> Result:
+    ...
+```
+
+## Testing
+
+How to test the plugin in isolation and against the full gateway.

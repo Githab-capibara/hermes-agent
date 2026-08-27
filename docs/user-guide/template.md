@@ -1,34 +1,34 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Accepted | Deprecated
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Type:** Guide
+- **Audience:** end users of Hermes Agent
+- **Related:** [developer guide](../developer-guide/01-providers-registry.md)
 
-## Context
+## Overview
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+What this feature or topic is about. One paragraph.
 
-## Decision
+## How to use it
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+Numbered steps a user follows. Use imperative mood.
 
-## Consequences
+1. Open the TUI with `hermes`.
+2. Type `/command` to invoke the feature.
+3. Follow the on-screen prompts.
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+## Tips
 
-## Alternatives considered
+Optional advice for getting the most out of this feature.
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+## FAQ
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+| Question | Answer |
+|----------|--------|
+| … | … |
+
+## Related
+
+→ [skills overview](../skills/01-overview.md)
+→ [troubleshooting](../troubleshooting/01-overview.md)

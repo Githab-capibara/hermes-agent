@@ -1,4 +1,4 @@
-# Plugin Config & State Bridge
+# plugin config & state bridge
 
 - **Status:** Accepted — config + state slice implemented by #64227
 - **Date:** 2026-08-25

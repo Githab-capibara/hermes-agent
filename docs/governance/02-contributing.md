@@ -1,4 +1,4 @@
-# Contributing to Hermes Agent
+# Contributing to Hermes agent
 
 - **Status:** Accepted
 - **Date:** 2026-08-25

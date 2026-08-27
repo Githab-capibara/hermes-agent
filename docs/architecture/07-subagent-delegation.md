@@ -1,4 +1,4 @@
-# 08. Subagents and delegation
+# 07. Subagents and delegation
 
 - **Status:** Accepted
 - **Date:** 2026-08-25

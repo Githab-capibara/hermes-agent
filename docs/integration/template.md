@@ -1,34 +1,38 @@
-# NN. Title in present-tense imperative
+# NN. title in lowercase sentence case
 
-- **Status:** Proposed | Accepted | Deprecated | Superseded by ADR-NN
+- **Status:** Draft | Accepted | Deprecated
 - **Date:** YYYY-MM-DD
-- **Deciders:** GitHub handles of people who agreed to the decision
-- **Related:** issue/PR/ADR links that this decision depends on or supersedes
+- **Type:** Guide
+- **Audience:** contributors adding integrations
+- **Source files:** `integration/<name>/`
+- **Related:** [MCP integration](./02-mcp-integration.md)
 
-## Context
+## Overview
 
-What forces are at play? What makes this decision non-obvious? Two or
-three short paragraphs. Avoid restating background that is already in
-the linked docs — link instead.
+What this integration connects to and what it enables for Hermes users.
 
-## Decision
+## Requirements
 
-What are we doing? Stated affirmatively, in the present tense. Keep
-this section short; the reasoning lives in Context, the trade-offs in
-Consequences.
+| Requirement | Details |
+|-------------|---------|
+| API key | obtained from … |
+| Rate limit | … requests/min |
+| Auth method | OAuth2 / API key / token |
 
-## Consequences
+## Installation
 
-- **Easier:** what this decision unlocks.
-- **Harder:** what this decision constrains.
-- **Given up:** capabilities or flexibility we explicitly walk away from.
-- **Migration:** if applicable, what existing code/config has to change
-  and on what timeline.
+Step-by-step setup. Include both manual and automated (skill-based) paths.
 
-## Alternatives considered
+## Configuration
 
-- **Option A:** one-line description. Rejected because …
-- **Option B:** one-line description. Rejected because …
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `INTEGRATION_TOKEN` | yes | … |
 
-(Do not list options you did not actually consider. An ADR is a record,
-not a literature survey.)
+## Message mapping
+
+How external events map to Hermes sessions and how responses flow back.
+
+## Limitations
+
+What this integration cannot do today.

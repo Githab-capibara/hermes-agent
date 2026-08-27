@@ -1,4 +1,4 @@
-# skills
+# Skills
 
 This directory contains skills documentation for Hermes Agent.
 
@@ -7,6 +7,7 @@ This directory contains skills documentation for Hermes Agent.
 | File | Purpose |
 |------|---------|
 | [01-overview.md](01-overview.md) | Skills overview |
+| [02-optional-skills.md](02-optional-skills.md) | Official optional skills (install explicitly) |
 
 ## Related
 

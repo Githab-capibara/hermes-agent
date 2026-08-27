@@ -1,4 +1,4 @@
-# NeMo Relay Shared Metrics
+# NeMo relay shared metrics
 
 - **Status:** Accepted
 - **Date:** 2026-08-25

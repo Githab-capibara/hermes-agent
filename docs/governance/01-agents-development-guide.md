@@ -1,4 +1,4 @@
-# Hermes Agent - Development Guide
+# Hermes agent - development guide
 
 - **Status:** Accepted
 - **Date:** 2026-08-25
