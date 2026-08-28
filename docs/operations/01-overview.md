@@ -4,7 +4,7 @@
 - **Date:** 2026-08-25
 - **Type:** Reference
 - **Audience:** Operators running Hermes on servers/containers
-- **Related:** [Monitoring](../observability/01-monitoring.md), [Multi-gateway deployment](../kanban/01-multi-gateway.md), [Session restart recovery](../architecture/01-session-lifecycle.md), [SOUL persona](02-soul.md), [Network egress isolation](../security/01-network-egress-isolation.md)
+- **Related:** [Monitoring](../observability/01-monitoring.md), [Multi-gateway deployment](../kanban/01-multi-gateway.md), [Session restart recovery](../architecture/01-session-lifecycle.md), [SOUL persona](02-agent-persona-prompt.md), [Network egress isolation](../security/01-network-egress-isolation.md)
 
 ## Run modes
 
@@ -55,4 +55,4 @@ Deployment rules: [Multi-gateway deployment](../kanban/01-multi-gateway.md).
 ## Persona
 
 Base persona text and override precedence:
-[SOUL.md — agent persona prompt](02-soul.md).
+[SOUL.md — agent persona prompt](02-agent-persona-prompt.md).

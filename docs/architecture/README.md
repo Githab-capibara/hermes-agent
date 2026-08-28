@@ -15,7 +15,7 @@ This directory documents the core architecture of Hermes Agent — the design de
 | [Subagents and Delegation](07-subagent-delegation.md) | Child-agent isolation, parallel fan-out, background work |
 
 The agent persona prompt reference lives in
-[operations/02-soul.md](../operations/02-soul.md).
+[operations/02-agent-persona-prompt.md](../operations/02-agent-persona-prompt.md).
 
 ## Related
 

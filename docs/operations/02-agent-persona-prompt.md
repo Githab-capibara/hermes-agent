@@ -1,4 +1,4 @@
-# SOUL.md — agent persona prompt
+# 02. Agent persona prompt
 
 - **Status:** Accepted
 - **Date:** 2026-08-25

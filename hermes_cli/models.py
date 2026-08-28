@@ -653,11 +653,14 @@ _PROVIDER_MODELS: dict[str, list[str]] = {
     ],
     "omni-route": [
         "glm/glm-4.7",
+        "glm/glm/glm-5.2",
         "openzen/hy3-free",
-        "openzen/muse-spark-1.2-contributor-free",
+        "openzen/big-pickle",
         "hnc/auto",
         "hnc/kat-coder-pro-v2.5",
-        "hnc/qwen3.8-27b",
+        "hnc/kimi-k3",
+        "hnc/DeepSeek-V4-Pro",
+        "hnc/DeepSeek-V4-Flash",
     ],
 }
 

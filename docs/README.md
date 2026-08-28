@@ -56,6 +56,14 @@ Welcome to the **Hermes Agent** documentation hub. This index provides quick acc
 | [troubleshooting/](troubleshooting/) | Troubleshooting guides |
 | [user-guide/](user-guide/) | End-user guides |
 
+## ADR Index
+
+| # | Title | Status |
+|---|---|---|
+| [01](adr/01-plugin-manager-state-scoping.md) | Plugin manager state scoping by Hermes home | Accepted |
+
+> Full index with lifecycle rules: [adr/README.md](adr/README.md)
+
 ## Key entry points
 
 ### For Contributors

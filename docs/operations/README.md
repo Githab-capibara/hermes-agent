@@ -7,7 +7,7 @@ This directory contains operations documentation for Hermes Agent.
 | File | Purpose |
 |------|---------|
 | [01-overview.md](01-overview.md) | Operations overview |
-| [02-soul.md](02-soul.md) | SOUL.md — agent persona prompt |
+| [02-agent-persona-prompt.md](02-agent-persona-prompt.md) | Agent persona prompt (SOUL.md) reference |
 
 ## Related
 
